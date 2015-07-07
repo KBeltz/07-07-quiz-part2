@@ -4,3 +4,13 @@ var q2 = {question: ("What is the difference between a Hash and an Array in Ruby
 var q3 = {question: ("Which of the following is a primitive type in Ruby?"), options: "1: Integer, 2: String, 3: Float, 4: None of these", answer: "4"};
 var q4 = {question: ("A __________ takes your source code, converts it into machine language, and stores it in an executable file."), options: "1: Program, 2: Compiler, 3: Debugger, 4: Text editor", answer: "2"};
 var q5 = {question: ("__________ is writing step-by-step instructions telling the computer exactly what you want it to do."), options: "1: Designing, 2: Scripting, 3: Programming, 4: Encoding", answer: "3"};
+
+//returns the text that's currently typed into the #answer field
+function given_answer() {
+  return //something
+}
+
+//checks if the given argument matches the text of the correct answer
+function is_correct_answer(answer_text) {
+  return //something
+}
