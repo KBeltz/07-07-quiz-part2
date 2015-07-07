@@ -6,9 +6,10 @@
     </head>
 
     <body>
-      <div id="quiz"></div>
-      <div id="question"></div>
-      <div id="choices"></div>
+      <div id="quiz">
+        <div id="question"></div>
+        <div id="choices"></div>
+      </div>
 
       <input type="text" id="answer"></input>
       <button id="submitter"></button>
@@ -18,6 +19,11 @@
       <button id="next"></button>
 
       <div id="total_result"></div>
+
+      <script>
+        document.getElementById("question").innerHTML = q1.question;
+        document.getElementById("choices").innerHTML = q1.options;
+      </script>
     </body>
 
   </html>
