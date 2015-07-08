@@ -43,6 +43,7 @@ var update_question_result = function(correct) {
 var process_answer_submission = function() {
   var user_answer = given_answer();
   update_question_result(is_correct_answer(user_answer));
+  document.getElementById("submitter").style.visibility = "hidden";
 }
 
 function next_question() {
@@ -54,6 +55,7 @@ function next_question() {
     document.getElementById("next").onclick = next_question;
     document.getElementById("answer").value = null;
     document.getElementById("question_result").innerText = "";
+    document.getElementById("submitter").style.visibility="visible";
   }
 
   else {
