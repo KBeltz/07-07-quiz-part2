@@ -6,24 +6,19 @@
     </head>
 
     <body>
+
       <div id="quiz">
         <div id="question"></div>
         <div id="choices"></div>
+        <input type="text" id="answer"></input>
+        <button id="submitter" onclick="process_answer_submission">Submit</button>
       </div>
 
-      <input type="text" id="answer"></input>
-      <button id="submitter"></button>
-
       <div id="question_result"></div>
-
-      <button id="next"></button>
-
+      <button id="next">Next</button>
       <div id="total_result"></div>
 
-      <script>
-        document.getElementById("question").innerHTML = q1.question;
-        document.getElementById("choices").innerHTML = q1.options;
-      </script>
+      <script src="global.js"></script>
     </body>
 
   </html>
