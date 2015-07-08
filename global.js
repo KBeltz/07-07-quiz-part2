@@ -53,7 +53,7 @@ function next_question() {
     document.getElementById("choices").innerText = questions[currentQuestion].selections;
     document.getElementById("submitter").onclick = process_answer_submission;
     document.getElementById("next").onclick = next_question;
-    document.getElementById("answer").value = null;
+    document.getElementById("answer").value = "";
     document.getElementById("question_result").innerText = "";
     document.getElementById("submitter").style.visibility="visible";
   }
